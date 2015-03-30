@@ -3,6 +3,16 @@
 
 module.exports = function (config) {
     config.set({
+        // ... your default content
+
+        // This is the new content for your travis-ci configuration test
+        //  Custom launcher for Travis-CI
+        customLaunchers: {
+            Chrome_travis_ci: {
+                base: 'Chrome',
+                flags: ['--no-sandbox']
+            }
+        },
 
         // base path that will be used to resolve all patterns (eg. files, exclude)
         basePath: '',
@@ -77,4 +87,7 @@ module.exports = function (config) {
             suite: 'unit'
         }
     });
+    if(process.env.TRAVIS){
+        config.browsers = ['Chrome_travis_ci'];
+    }
 };
