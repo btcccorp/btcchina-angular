@@ -1,0 +1,21 @@
+{
+  "name": "btcchina-angular",
+  "version": "0.0.0",
+  "homepage": "https://github.com/BTCChina/btcchina-angular",
+  "authors": [
+    "Tommy Tang <1530234656@qq.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "~1.3.15",
+    "angular": "~1.3.15",
+    "angular-utf8-base64": "~0.0.5"
+  }
+}
